@@ -1,0 +1,159 @@
+.conteiner {
+  width: 100%;
+  position: relative;
+  margin: 0 auto;
+}
+.conteiner header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 16px;
+  gap: 20px;
+  padding: 32px;
+  border-bottom: 1px solid #B4AEAE;
+}
+.conteiner header img {
+  display: flex;
+  align-self: center;
+  width: 245px;
+  height: auto;
+}
+.conteiner header nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 33px;
+  justify-content: space-between;
+}
+.conteiner header ul {
+  display: flex;
+  justify-content: space-around;
+  gap: 33px;
+}
+.conteiner header ul li {
+  display: flex;
+  align-items: center;
+  white-space: nowrap;
+}
+.conteiner header ul li p {
+  color: #4B5563;
+}
+.conteiner header button {
+  width: 189px;
+  height: 60px;
+  color: #fff;
+  background-color: #21C05C;
+  border: 1px solid #21C05C;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.conteiner main {
+  display: flex;
+  flex-direction: column;
+}
+.conteiner main .mainSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-top: 120px;
+}
+.conteiner main .mainSection .introDiv {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+.conteiner main .mainSection .introDiv h1 {
+  font-weight: 700;
+  font-style: bold;
+  font-size: 60px;
+}
+.conteiner main .mainSection .introDiv .btnDiv {
+  display: flex;
+  gap: 30px;
+}
+.conteiner main .mainSection .introDiv .btnDonor, .conteiner main .mainSection .introDiv .btnAdquired {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 189px;
+  height: 60px;
+  gap: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+}
+.conteiner main .mainSection .introDiv .btnDonor img, .conteiner main .mainSection .introDiv .btnAdquired img {
+  width: 24px;
+  height: 24px;
+}
+.conteiner main .mainSection .introDiv .btnDonor {
+  color: #fff;
+  background-color: #21C05C;
+  border: 1px solid #21C05C;
+}
+.conteiner main .mainSection .introDiv .btnAdquired {
+  color: #2563EB;
+  background-color: transparent;
+  border: 1px solid #2563EB;
+}
+.conteiner main .mainSection .bigLogoDiv img {
+  width: 100%;
+}
+.conteiner main .statsSection {
+  background-color: #F3F5F8;
+  margin-top: 128px;
+  height: 184px;
+}
+.conteiner main .statsSection ul {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: center;
+  padding-top: 48px;
+}
+.conteiner main .statsSection ul li {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+.conteiner main .statsSection ul li h2 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #16A34A;
+}
+.conteiner main .statsSection ul li p {
+  color: #4B5563;
+}
+@media (max-width: 880px) {
+  .conteiner header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .conteiner header nav {
+    width: 100%;
+    align-items: center;
+  }
+  .conteiner header img {
+    align-self: flex-start;
+  }
+  .conteiner header ul {
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-around;
+  }
+  .conteiner .mainSection {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .conteiner .mainSection .introDiv {
+    width: 90%;
+  }
+  .conteiner .mainSection .introDiv h1 {
+    font-size: 40px !important;
+  }
+  .conteiner .mainSection .btnDiv {
+    justify-content: center;
+  }
+}/*# sourceMappingURL=styles.css.map */
