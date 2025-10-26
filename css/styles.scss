@@ -40,6 +40,7 @@
 
                 p {
                     color: #4B5563;
+                    cursor: pointer;
                 }
 
             }
@@ -64,7 +65,7 @@
 
         .mainSection {
             display: flex;
-            justify-content: center;
+            justify-content: space-around;
             align-items: center;
             gap: 20px;
             margin-top: 120px;
@@ -150,11 +151,153 @@
                 }
             }
         }
+        
+        .infoSection {
+            display: flex;
+            flex-direction: column;
+            padding: 75px;
+
+            .howWorkDiv {
+                margin-bottom: 60px;
+
+                h3 {
+                    font-weight: 700;
+                    font-size: 40px;
+                    margin-bottom: 16px;
+                }
+
+                p {
+                    font-size: 25px;
+                }
+            }
+
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 32px;
+
+                p {
+                    color: #4B5563;
+                    margin-bottom: 14px;
+                }
+                
+                h4 {
+                    font-weight: 700;
+                    font-size: 16px;
+                }
+
+
+                .infoCard {
+                    box-sizing: border-box;
+                    background-color: #F3F5F8;
+                    padding: 32px;
+                    border-radius: 12px;
+                    width: 430px;
+                    min-width: 320px;
+
+                    .donorCardTitle, .adquiredCardTitle {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 12px;
+                        margin-bottom: 28px;
+                        height: 130px;
+
+                        p {
+                            margin-top: 14px ;
+                        }
+
+                        div {
+                            display: flex;
+                            align-items: center;
+                            gap: 12px;
+                        }
+                    }
+
+                    .donorCardTitle {
+                        color: #16A34A;
+                    }
+
+                    .adquiredCardTitle {
+                        color: #2563EB;
+                    }
+                }
+                li {
+                    display: flex;
+                    gap: 12px;
+                    height: 90px;
+                    
+                    img {
+                        width: 32px;
+                        height: 32px;
+                    }
+                }
+            }
+        }
+
+        .productSection {
+            padding: 75px;
+            background-color: #F3F5F8;
+
+            .productTitle {
+                h3 {
+                    font-weight: 700;
+                    font-size: 40px;
+                    color: #1F2937;
+                    margin-bottom: 17px;
+                }
+
+                p {
+                    font-size: 25px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 75px;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    width: 300px;
+                    height: 400px;
+                    text-align: center;
+                    justify-content: space-between;
+                    border: 2px solid #16A34A;
+                    border-radius: 8px;
+
+                    img {
+                        width: 100%;
+                        height: 55%;
+                    }
+
+                    p {
+                        margin: 0 20px;
+                        color: #4B5563;
+                    }
+
+                    button {
+                        align-self: center;
+                        margin-bottom: 26px;
+                        width: 150px;
+                        height: 37px;
+                        background-color: #16A34A;
+                        border: none;
+                        border-radius: 6px;
+                        color: #fff;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
 
         
     }
 
-    @media (max-width: 880px) {
+    @media (max-width: 910px) {
         header {
             flex-direction: column;
             align-items: flex-start;
@@ -193,6 +336,28 @@
                 justify-content: center;
             }
 
+        }
+
+        .infoSection {
+            padding: 16px !important; 
+        }
+
+        .howWorkDiv {
+            text-align: center;
+            margin-bottom: 28px !important;
+        }
+
+        .productSection {
+            padding: 32px 16px !important;
+            text-align: center;
+
+             ul {
+                padding: 0 !important;
+
+                li {
+                    margin-top: 30px;
+                }
+             }
         }
     }
 

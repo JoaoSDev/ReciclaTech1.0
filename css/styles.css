@@ -36,6 +36,7 @@
 }
 .conteiner header ul li p {
   color: #4B5563;
+  cursor: pointer;
 }
 .conteiner header button {
   width: 189px;
@@ -53,7 +54,7 @@
 }
 .conteiner main .mainSection {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   gap: 20px;
   margin-top: 120px;
@@ -125,7 +126,124 @@
 .conteiner main .statsSection ul li p {
   color: #4B5563;
 }
-@media (max-width: 880px) {
+.conteiner main .infoSection {
+  display: flex;
+  flex-direction: column;
+  padding: 75px;
+}
+.conteiner main .infoSection .howWorkDiv {
+  margin-bottom: 60px;
+}
+.conteiner main .infoSection .howWorkDiv h3 {
+  font-weight: 700;
+  font-size: 40px;
+  margin-bottom: 16px;
+}
+.conteiner main .infoSection .howWorkDiv p {
+  font-size: 25px;
+}
+.conteiner main .infoSection .cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 32px;
+}
+.conteiner main .infoSection .cards p {
+  color: #4B5563;
+  margin-bottom: 14px;
+}
+.conteiner main .infoSection .cards h4 {
+  font-weight: 700;
+  font-size: 16px;
+}
+.conteiner main .infoSection .cards .infoCard {
+  box-sizing: border-box;
+  background-color: #F3F5F8;
+  padding: 32px;
+  border-radius: 12px;
+  width: 430px;
+  min-width: 320px;
+}
+.conteiner main .infoSection .cards .infoCard .donorCardTitle, .conteiner main .infoSection .cards .infoCard .adquiredCardTitle {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 28px;
+  height: 130px;
+}
+.conteiner main .infoSection .cards .infoCard .donorCardTitle p, .conteiner main .infoSection .cards .infoCard .adquiredCardTitle p {
+  margin-top: 14px;
+}
+.conteiner main .infoSection .cards .infoCard .donorCardTitle div, .conteiner main .infoSection .cards .infoCard .adquiredCardTitle div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.conteiner main .infoSection .cards .infoCard .donorCardTitle {
+  color: #16A34A;
+}
+.conteiner main .infoSection .cards .infoCard .adquiredCardTitle {
+  color: #2563EB;
+}
+.conteiner main .infoSection .cards li {
+  display: flex;
+  gap: 12px;
+  height: 90px;
+}
+.conteiner main .infoSection .cards li img {
+  width: 32px;
+  height: 32px;
+}
+.conteiner main .productSection {
+  padding: 75px;
+  background-color: #F3F5F8;
+}
+.conteiner main .productSection .productTitle h3 {
+  font-weight: 700;
+  font-size: 40px;
+  color: #1F2937;
+  margin-bottom: 17px;
+}
+.conteiner main .productSection .productTitle p {
+  font-size: 25px;
+}
+.conteiner main .productSection ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 75px;
+}
+.conteiner main .productSection ul li {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 300px;
+  height: 400px;
+  text-align: center;
+  justify-content: space-between;
+  border: 2px solid #16A34A;
+  border-radius: 8px;
+}
+.conteiner main .productSection ul li img {
+  width: 100%;
+  height: 55%;
+}
+.conteiner main .productSection ul li p {
+  margin: 0 20px;
+  color: #4B5563;
+}
+.conteiner main .productSection ul li button {
+  align-self: center;
+  margin-bottom: 26px;
+  width: 150px;
+  height: 37px;
+  background-color: #16A34A;
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  cursor: pointer;
+}
+@media (max-width: 910px) {
   .conteiner header {
     flex-direction: column;
     align-items: flex-start;
@@ -155,5 +273,22 @@
   }
   .conteiner .mainSection .btnDiv {
     justify-content: center;
+  }
+  .conteiner .infoSection {
+    padding: 16px !important;
+  }
+  .conteiner .howWorkDiv {
+    text-align: center;
+    margin-bottom: 28px !important;
+  }
+  .conteiner .productSection {
+    padding: 32px 16px !important;
+    text-align: center;
+  }
+  .conteiner .productSection ul {
+    padding: 0 !important;
+  }
+  .conteiner .productSection ul li {
+    margin-top: 30px;
   }
 }/*# sourceMappingURL=styles.css.map */
