@@ -243,6 +243,93 @@
   color: #fff;
   cursor: pointer;
 }
+.conteiner main .reviewSection {
+  padding: 75px;
+}
+.conteiner main .reviewSection .reviewSectionTitle {
+  text-align: center;
+}
+.conteiner main .reviewSection .reviewSectionTitle h3 {
+  font-weight: 700px;
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+.conteiner main .reviewSection .reviewSectionTitle p {
+  color: #4B5563;
+  font-size: 25px;
+}
+.conteiner main .reviewSection ul {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 75px;
+}
+.conteiner main .reviewSection ul li {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  padding: 32px;
+  width: 340px;
+  height: 300px;
+  justify-content: space-between;
+  border-radius: 8px;
+  border: 1px solid #9CA3AF;
+  border-left: 4px solid #9CA3AF;
+}
+.conteiner main .reviewSection ul li img {
+  width: 120px;
+  height: 24px;
+}
+.conteiner main .reviewSection ul li p {
+  color: #4B5563;
+}
+.conteiner main .reviewSection ul li .users {
+  display: flex;
+  gap: 12px;
+}
+.conteiner main .reviewSection ul li .users img {
+  width: 40px;
+  height: 40px;
+}
+.conteiner main .reviewSection ul li .users h4 {
+  font-size: 14px;
+}
+.conteiner main .makeDifferenceSection {
+  padding: 75px;
+  text-align: center;
+  background-color: #F3F5F8;
+}
+.conteiner main .makeDifferenceSection .makeDifferenceSectionTitle h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+.conteiner main .makeDifferenceSection .makeDifferenceSectionTitle p {
+  font-size: 25px;
+  margin-bottom: 51px;
+}
+.conteiner main .makeDifferenceSection .buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 17px;
+}
+.conteiner main .makeDifferenceSection .mDbtn1, .conteiner main .makeDifferenceSection .mDbtn2 {
+  width: 189px;
+  height: 44px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.conteiner main .makeDifferenceSection .mDbtn1 {
+  background-color: #16A34A;
+  color: #fff;
+}
+.conteiner main .makeDifferenceSection .mDbtn2 {
+  background-color: transparent;
+  color: #16A34A;
+  border: 1px solid #16A34A;
+}
 @media (max-width: 910px) {
   .conteiner header {
     flex-direction: column;
@@ -290,5 +377,23 @@
   }
   .conteiner .productSection ul li {
     margin-top: 30px;
+  }
+  .conteiner .reviewSection {
+    padding: 32px 16px !important;
+  }
+  .conteiner .reviewSection ul {
+    padding: 0 !important;
+  }
+  .conteiner .reviewSection ul li {
+    margin-top: 30px;
+  }
+  .conteiner .makeDifferenceSection {
+    padding: 32px 16px !important;
+  }
+  .conteiner .makeDifferenceSection .makeDifferenceSectionTitle h2 {
+    font-size: 48px !important;
+  }
+  .conteiner .makeDifferenceSection .makeDifferenceSectionTitle p {
+    font-size: 20px !important;
   }
 }/*# sourceMappingURL=styles.css.map */

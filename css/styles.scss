@@ -294,6 +294,112 @@
             }
         }
 
+        .reviewSection {
+            padding: 75px;
+
+            .reviewSectionTitle {
+
+                text-align: center;
+                
+                h3 {
+                    font-weight: 700px;
+                    font-size: 40px;
+                    margin-bottom: 10px;
+                }
+
+                p {
+                    color: #4B5563;
+                    font-size: 25px;
+                }
+            }
+
+            ul {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                padding: 75px;
+
+                li {
+                    display: flex;
+                    flex-direction: column;
+                    box-sizing: border-box;
+                    padding: 32px;
+                    width: 340px;
+                    height: 300px;
+                    justify-content: space-between;
+                    border-radius: 8px;
+                    border: 1px solid #9CA3AF;
+                    border-left: 4px solid #9CA3AF;
+                    
+                    img {
+                        width: 120px;
+                        height: 24px;
+                    }
+
+                    p {
+                        color: #4B5563;
+                    }
+
+                    .users {
+                        display: flex;
+                        gap: 12px;
+
+                        img {
+                            width: 40px;
+                            height: 40px;
+                        }
+                        
+                        
+                        h4 {
+                            font-size: 14px;
+                        }
+                    }
+                }
+            }
+
+        }
+        
+        .makeDifferenceSection {
+            padding: 75px;
+            text-align: center;
+            background-color: #F3F5F8;
+
+            .makeDifferenceSectionTitle {
+                h2 {
+                    font-size: 60px;
+                    font-weight: 700;
+                    margin-bottom: 10px;
+                }
+                p{
+                    font-size: 25px;
+                    margin-bottom: 51px;
+                }
+            }
+
+            .buttons {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 17px;
+            }
+            .mDbtn1,.mDbtn2 {
+                width: 189px;
+                height: 44px;
+                border-radius: 6px;
+                border: none;
+                cursor: pointer;
+            }
+
+            .mDbtn1 {
+                background-color: #16A34A;
+                color: #fff;
+            }
+            .mDbtn2 {
+                background-color: transparent;
+                color: #16A34A;
+                border: 1px solid #16A34A;
+            }
+        }
         
     }
 
@@ -358,6 +464,32 @@
                     margin-top: 30px;
                 }
              }
+        }
+
+        .reviewSection {
+            padding: 32px 16px !important;
+
+            ul {
+                padding: 0 !important;
+
+                li {
+                     margin-top: 30px;
+                }
+            }
+        }
+
+        .makeDifferenceSection {
+            padding: 32px 16px !important;
+
+            .makeDifferenceSectionTitle {
+                h2 {
+                    font-size: 48px !important;
+                }
+
+                p {
+                    font-size: 20px !important;
+                }
+            }
         }
     }
 
